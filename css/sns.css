@@ -1,0 +1,15 @@
+@media screen and (min-width: 768px) {
+    .basic-info {
+        border-right: 2px solid #e4dcdc;
+    }
+    .md-display-ch {
+        display: flex;
+        
+    }
+    .w-23p {
+        width: 23%;
+    }
+    .w-50p {
+        width: 50%;
+    }
+}

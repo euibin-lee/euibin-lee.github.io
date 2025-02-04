@@ -1,0 +1,157 @@
+div, input, textarea {
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(80, 80, 80);
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.iphone img {
+    width: 80%;
+    display: inline-block;
+}
+
+.top-content {
+    width: 100%;
+    background: linear-gradient(rgb(97, 158, 244), rgb(150, 44, 255));
+    padding: 10%;
+    padding-bottom: 0;
+    display: flex;
+    clear: both;
+}
+
+.discription {
+    width: 50%;
+    color: white;
+}
+
+.iphone {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.center-text {
+    width: 100%;
+    padding: 5%;
+    text-align: center;
+}
+
+.footer-content {
+    background-color: rgb(150, 44, 255);
+    color: white;
+}
+
+div.footer-content p, h3 {
+    margin: 0;
+}
+
+.layout-container {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.icon-layout {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5%;
+}
+
+.icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+}
+.icon-box i {
+    color: rgb(150, 44, 255);
+    font-size: 30px;
+}
+
+.icon-box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(150, 44, 255);
+}
+
+.icon-box2 i {
+    color: white;
+    font-size: 20px;
+}
+
+.land-img {
+    width: 85%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.img-container {
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5%;
+    color: white;
+    transition: all 1s;
+}
+
+.img-container:hover {
+    outline: 20px solid white;
+    outline-offset: -20px;
+}
+
+@media screen and (max-width: 768px){
+    .top-content {
+        display: block;
+    }
+    .discription {
+        width: 100%;
+        text-align: center;
+    }
+    .iphone {
+        display: block;
+        width: 100%;
+        height: fit-content;
+        margin-top: 10%;
+    }
+    .iphone img {
+        width: 50%;
+        display: block;
+        height: auto;
+        margin: auto;
+    }
+    .land-img {
+        width: 70%;
+        flex-direction: column;
+    }
+    .img-container {
+        width: 100%;
+    }
+    .img-container:hover {
+        outline: 10px solid white;
+        outline-offset: -10px;
+    }
+}
+
+

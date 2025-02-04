@@ -1,0 +1,294 @@
+@font-face {
+    font-family: '이쁜폰트';
+    src: url(../font/NanumGothic-Regular.ttf);
+}
+
+div, input, textarea {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: '이쁜폰트';
+}
+
+p, h4, h3, span {
+    transform: rotate(0.04deg);
+}
+
+img {
+    float: left;
+    width: 200px;
+    height: 150px;
+}
+
+.profile {
+    width: 120px; 
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name {
+    text-align: center; 
+    font-size: 16px
+}
+
+.box {
+    width: 200px;
+    background-color: rgb(199, 195, 195);
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    box-shadow: 5px 5px 5px rgb(38, 37, 37);
+}
+
+.container {
+    width: 800px;
+    background-color: rgb(103, 167, 184);
+    padding: 30px;
+}
+
+.header {
+    width: 100%; 
+    height: 50px;
+    background-color: aquamarine;
+}
+
+.left-menu {
+    width: 20%;
+    height: 400px;
+    background-color: cornflowerblue;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.right-menu {
+    width: 80%;
+    height: 400px;
+    background-color: orange;
+    display: inline-block;
+    
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+}
+
+.main-background {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/shoes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1px;
+    text-align: center;
+}
+
+.main-title {
+    color: white;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.main-content {
+    width: 500px;
+    color: black;
+    background: rgba(255, 255, 255, 0.5);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-button {
+    background: rgb(219, 219, 219);
+    padding: 10px;
+    border: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90px;
+}
+
+.main-explain {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+    background: rgb(222, 222, 222);
+    position: relative;
+    top: -40px;
+    margin: auto;
+}
+
+input[type=text] {
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+tr {
+    border: 1px solid rgb(103, 167, 184);
+}
+
+table {
+    border-collapse: collapse;
+    background: white;
+    
+    width: 100%;
+    border-radius: 8px;
+}
+
+button {
+    background-color: rgba(5, 5, 131);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    left: 70%;
+    width: 30%;
+    height: 50px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: black;
+}
+button:active {
+    background-color: brown;
+}
+
+.flex-container {
+    display: flex;
+    
+}
+
+.flex-item {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(245, 127, 127);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 600;
+    flex-grow: 3;
+    padding-left: 20px;
+}
+
+.menu {
+    font-size: 20px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+
+.layout-container {
+    display: flex;
+    max-width: 1000px;
+    flex-direction: row;
+    margin: auto;
+}
+
+.layout-menu {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+div.layout-menu > h4 {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-title {
+        font-size: 30px;
+    }
+    .logo {
+        font-size: 20px;
+    }
+    .menu {
+        font-size: 15px;
+    }
+    .layout-container {
+        flex-wrap: wrap;
+        max-width: 800px;
+    }
+    .layout-menu {
+        font-size: 15px;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .layout-container {
+        flex-direction: column;
+        max-width: 400px;
+    }
+    .layout-menu {
+        width: 100%;
+        font-size: 13px;
+    }
+}
+
+.shop-bg {
+    background-color: #eee;
+    padding: 20px;
+}
+
+.shop-container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.shop-item {
+    width: 33%;
+    padding: 10px;
+}
+.shop-item img {
+    width: 100%;
+    display: block;
+}
+
+.overlay-container {
+    position: relative; 
+    height: 100%; 
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    padding: 10px;
+    transition: all 1s;
+}
+.overlay-container:hover .overlay {
+    top: 50%;
+}
+ .overlay p {
+    font-size: 30px;
+    margin: 0;
+ }
+
+
+
